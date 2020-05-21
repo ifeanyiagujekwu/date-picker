@@ -1,3 +1,7 @@
-.back-back{
+.previous-previous, .previous, .next-next, .next{
     padding: 5px;
+    columns: white;
+}
+li{
+    display: inline-block;
 }

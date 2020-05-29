@@ -8,19 +8,19 @@
 <body>
   <ul>
     <li>
-      <button class="previous-previous"><<</button>
+      <button (click) = "last_week('n')" class="previous-previous" ><<</button>
     </li>
     <li>
-      <button class="previous"><</button>
+      <button (click) = "yesterday('n')" class="previous" ><</button>
     </li>
     <li>
-      
+      {{date}}
     </li>
     <li>
-      <button class="next">></button>
+      <button (click) = "tomorrow('n')" class="next">></button>
     </li>
     <li>
-      <button class="next-next">>></button>
+      <button (click) = "next_week('n')" class="next-next" >>></button>
     </li>
   </ul>
 </body>

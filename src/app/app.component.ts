@@ -29,14 +29,14 @@ export class AppComponent {
   next_week(n: string){
     
     var dayWrapper = moment(this.date);
-    var n = dayWrapper.add((this.n+1), 'weeks').toString();
+    var n = dayWrapper.add((this.n++), 'weeks').toString();
     console.log(n);
     
   }
   last_week(n: string){
     
     var dayWrapper = moment(this.date);
-    var n = dayWrapper.subtract((this.n+1), 'weeks').toString();
+    var n = dayWrapper.subtract((this.n++), 'weeks').toString();
     console.log(n);
     
   }
